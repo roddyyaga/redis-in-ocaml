@@ -1,0 +1,8 @@
+
+{1 Library redis-clone_lib}
+
+This is the description
+of the redis-clone OCaml project
+
+
+The entry point of this library is the module: {!Redis_clone_lib}.

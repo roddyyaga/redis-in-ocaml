@@ -1,0 +1,63 @@
+[project]
+drom-version = "0.1.0"
+
+[project]
+authors = ["Roddy <github@roddymacsween.co.uk>"]
+copyright = "Roddy <github@roddymacsween.co.uk>"
+edition = "4.10.0"
+license = "LGPL2"
+min-edition = "4.10.0"
+mode = "binary"
+name = "redis-clone"
+synopsis = "The redis-clone project"
+version = "0.1.0"
+windows-ci = true
+
+# keys that you could also define:
+# build-profile = "...build-profile..."
+# odoc-target = "...odoc-target..."
+# sphinx-target = "...sphinx-target..."
+# archive = "...archive..."
+# dev-repo = "...dev-repo..."
+# bug-reports = "...bug-reports..."
+# doc-api = "...doc-api..."
+# doc-gen = "...doc-gen..."
+# homepage = "...homepage..."
+# github-organization = "...github-organization..."
+
+[project]
+description = """
+This is the description
+of the redis-clone OCaml project
+"""
+
+[drom]
+skip = ""
+
+[dependencies]
+lwt = ""
+async = ""
+ppx_variants_conv = ""
+logs = ""
+
+[tools.ocamlformat]
+for-test = true
+[tools.odoc]
+for-doc = true
+[tools.ppx_expect]
+for-test = true
+[tools.ppx_inline_test]
+for-test = true
+
+[project]
+generators = ["ocamllex", "ocamlyacc"]
+pack-modules = true
+skip-dirs = []
+
+
+[[package]]
+dir = "src/redis-clone"
+
+[[package]]
+dir = "src/redis-clone_lib"
+

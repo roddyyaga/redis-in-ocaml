@@ -1,0 +1,5 @@
+kind = "program"
+name = "redis-clone"
+skeleton = "driver"
+[dependencies]
+redis-clone_lib = "version"

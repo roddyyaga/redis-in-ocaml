@@ -1,0 +1,4 @@
+gen-version = "version.ml"
+kind = "library"
+name = "redis-clone_lib"
+skeleton = "library"
